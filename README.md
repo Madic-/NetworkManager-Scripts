@@ -14,6 +14,8 @@ NetworkManager will pass two variables to those scripts:
 Depending on these states and the CONNECTION_UUID the script 88-MASTER-DISPATCHER runs all scripts under e.g. /etc/NetworkManager/dispatcher.d/$CONNECTION_UUID/$2/*
 
 ```
+# tree /etc/NetworkManager/dispatcher.d
+
 /etc/NetworkManager/dispatcher.d
 ├── 57874773-c8f2-4c37-966e-6caa756f1c5f
 │   ├── vpn-down
