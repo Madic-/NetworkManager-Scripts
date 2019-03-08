@@ -1,8 +1,8 @@
 # NetworkManager Scripts
 
-Run scripts after activating a specific connection with network manager.
+Run scripts after activating a specific interface with network manager.
 
-This is a shameless rip-off from [rabin.io](https://blog.rabin.io/linux/networkmanager-using-dispatcher-d-to-run-scripts-based-on-network-connectivity)
+This is a shameless rip-off from [rabin.io](https://blog.rabin.io/linux/networkmanager-using-dispatcher-d-to-run-scripts-based-on-network-connectivity).
 
 On every connect/disconnect NetworkManager runs all scripts in the folder /etc/NetworkManager/dispatcher.d.
 
@@ -24,6 +24,8 @@ Depending on these states and the CONNECTION_UUID the script 88-MASTER-DISPATCHE
 ```
 
 ## Installation
+
+git clone https://github.com/Madic-/NetworkManager-Scripts.git
 
 sudo cp -r scripts/* /etc/NetworkManager/dispatcher.d/
 
