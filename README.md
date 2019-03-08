@@ -33,6 +33,7 @@ Depending on these states and the CONNECTION_UUID the script 88-MASTER-DISPATCHE
 
 ```bash
 git clone https://github.com/Madic-/NetworkManager-Scripts.git
+cd NetworkManager-Scripts/
 sudo cp -r scripts/* /etc/NetworkManager/dispatcher.d/
 ```
 
