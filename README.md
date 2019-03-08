@@ -8,14 +8,16 @@ On every connect/disconnect NetworkManager runs all scripts in the folder /etc/N
 
 NetworkManager will pass two variables to those scripts:
 
-* $1 = Device name, e.g. ppp0, eth0
-* $2 = Connection State, up, down, vpn-up, vpn-down
+```bash
+$1 = Device name, e.g. ppp0, eth0
+$2 = Connection State, up, down, vpn-up, vpn-down
+```
 
 More information can be found in the [Arch Wiki](https://wiki.archlinux.org/index.php/NetworkManager#Network_services_with_NetworkManager_dispatcher).
 
 Depending on these states and the CONNECTION_UUID the script 88-MASTER-DISPATCHER runs all scripts under e.g. /etc/NetworkManager/dispatcher.d/$CONNECTION_UUID/$2/*
 
-```
+```bash
 # tree /etc/NetworkManager/dispatcher.d
 
 /etc/NetworkManager/dispatcher.d
@@ -29,10 +31,13 @@ Depending on these states and the CONNECTION_UUID the script 88-MASTER-DISPATCHE
 
 ## Installation
 
+```bash
 git clone https://github.com/Madic-/NetworkManager-Scripts.git
-
 sudo cp -r scripts/* /etc/NetworkManager/dispatcher.d/
+```
 
 ## Log
 
-/var/log/NetworkManager_dispatcher.d.log
+```bash
+less /var/log/NetworkManager_dispatcher.d.log
+```
