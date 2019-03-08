@@ -15,7 +15,7 @@ $2 = Connection State, up, down, vpn-up, vpn-down
 
 More information can be found in the [Arch Wiki](https://wiki.archlinux.org/index.php/NetworkManager#Network_services_with_NetworkManager_dispatcher).
 
-Depending on these states and the CONNECTION_UUID the script 88-MASTER-DISPATCHER runs all scripts under e.g. /etc/NetworkManager/dispatcher.d/$CONNECTION_UUID/$2/*
+Depending on these states and the **CONNECTION_UUID** the script **88-MASTER-DISPATCHER** runs all scripts under **/etc/NetworkManager/dispatcher.d/$CONNECTION_UUID/$2/***
 
 ```bash
 # tree /etc/NetworkManager/dispatcher.d
