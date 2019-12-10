@@ -1,0 +1,3 @@
+# Reduce mtu on vpn-up because some ISPs have problems with a VPN running with a default mtu
+
+ip link set dev $DEVICE mtu 1300
