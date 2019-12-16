@@ -13,6 +13,17 @@ $2 = Connection State, up, down, vpn-up, vpn-down
 
 Depending on the **STATE** and **CONNECTION_UUID** the script **88-MASTER-DISPATCHER** runs all scripts under **/etc/NetworkManager/dispatcher.d/$CONNECTION_UUID/$STATE/**
 
+## Installation
+
+```bash
+git clone https://github.com/Madic-/NetworkManager-Scripts.git
+sudo cp -r ./NetworkManager-Scripts/scripts/* /etc/NetworkManager/dispatcher.d/
+```
+
+## Configuration
+
+Create the required folder(s) beneath /etc/NetworkManager/dispatcher.d. The state depends on the interface type
+
 ```bash
 # tree /etc/NetworkManager/dispatcher.d
 
@@ -36,15 +47,9 @@ docker0:3fb90a71-d42b-4521-949e-b2be16531f4f
 Freifunk:22e4c57f-49fd-4de6-8762-fd5033140e2d
 ```
 
-## Installation
-
-```bash
-git clone https://github.com/Madic-/NetworkManager-Scripts.git
-cd NetworkManager-Scripts/
-sudo cp -r scripts/* /etc/NetworkManager/dispatcher.d/
-```
-
 ## Log
+
+The script writes a logfile from where you can additionaly get the STATE and CONNECTION_UUID.
 
 ```bash
 less /var/log/NetworkManager_dispatcher.d.log
