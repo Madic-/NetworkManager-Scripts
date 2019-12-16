@@ -22,7 +22,7 @@ Depending on the **STATE** and **CONNECTION_UUID** the script **88-MASTER-DISPAT
 │   │   └── enable-ipv6
 │   └── vpn-up
 │       └── disable-ipv6
-|       └── mtr
+│       └── mtr
 ├── 88-MASTER-DISPATCHER
 ```
 
