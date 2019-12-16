@@ -1,6 +1,6 @@
 # NetworkManager Scripts
 
-> Run interface specific scripts on de/activating it with network manager.
+> Run interface specific scripts on de/activating an interface with network manager.
 
 This is a shameless rip-off from [rabin.io](https://blog.rabin.io/linux/networkmanager-using-dispatcher-d-to-run-scripts-based-on-network-connectivity).
 
